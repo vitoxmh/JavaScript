@@ -8,17 +8,17 @@ document.querySelectorAll('nombreClase');
 
 ###### Remover clase a un elemento
 ```javascript
-document.querySelector('nombreClase').classList.remove('classNave');
+document.querySelector('nombreClase').classList.remove('className');
 ```
 
 ###### Agregar clase a un elemento
 ```javascript
-document.querySelector('nombreClase').classList.add('classNave');
+document.querySelector('nombreClase').classList.add('className');
 ```
 
 ###### Agregar o Quitar clase segun estado de un elemento
 ```javascript
-document.querySelector('nombreClase').classList.toggle('classNave');
+document.querySelector('nombreClase').classList.toggle('className');
 ```
 
 ###### Eventos
