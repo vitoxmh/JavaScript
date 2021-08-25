@@ -8,15 +8,32 @@ document.querySelectorAll('nombreClase');
 
 ###### Remover clase a un elemento
 ```javascript
-document.querySelector('nombreClase').classList.remove('classNave')
+document.querySelector('nombreClase').classList.remove('classNave');
 ```
 
 ###### Agregar clase a un elemento
 ```javascript
-document.querySelector('nombreClase').classList.add('classNave')
+document.querySelector('nombreClase').classList.add('classNave');
 ```
 
 ###### Agregar o Quitar clase segun estado de un elemento
 ```javascript
-document.querySelector('nombreClase').classList.toggle('classNave')
+document.querySelector('nombreClase').classList.toggle('classNave');
 ```
+
+###### Eventos
+
+* click
+* blur
+* change
+* 
+```javascript
+document.querySelector('nombreClase').addEventlistener('evento', (e) => {
+
+    // Codigo Aqui
+
+});
+```
+
+Mas eventos revisar en Pagina [https://developer.mozilla.org/es/docs/Web/Events](https://developer.mozilla.org/es/docs/Web/Events)
+
