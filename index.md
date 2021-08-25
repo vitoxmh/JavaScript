@@ -73,3 +73,9 @@ document.querySelector('selector').setAttribute("nombreAtributo", "datoAtributo"
 element.getAttribute(nombreAtributo);
 ```
 
+
+###### Remover Atributos
+```javascript
+element.removeAttribute(nombreAtributo);
+```
+
