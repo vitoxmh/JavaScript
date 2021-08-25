@@ -48,7 +48,7 @@ const frutas = [
     {id: 4, nombre: 'Limon'},
 ];
  
-const momentoComida = frutas.map(function(fruta) {
+frutas.map(function(fruta) {
     console.log(fruta.nombre)
 });
 ```
@@ -59,5 +59,17 @@ const frutas = ['Manzana', 'Pera', 'Platano', 'Limon', 'Piña'];
 frutas.forEach(function(fruta, index) {
     console.log(`${index} : ${fruta}`);
 });
+```
+
+### Atributos
+
+###### Modificar Atributos
+```javascript
+document.querySelector('selector').setAttribute("nombreAtributo", "datoAtributo");
+```
+
+###### Obtener Atributos
+```javascript
+element.getAttribute(nombreAtributo);
 ```
 
