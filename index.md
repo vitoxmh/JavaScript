@@ -79,3 +79,13 @@ element.getAttribute(nombreAtributo);
 element.removeAttribute(nombreAtributo);
 ```
 
+###### Remover Atributos
+```javascript
+ const elementos = document.querySelectorAll('.c-lightbox');
+
+ elementos.forEach((element) => {
+    element.classList.remove('is-show');
+ });
+```
+
+
