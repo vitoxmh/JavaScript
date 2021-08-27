@@ -79,7 +79,7 @@ element.getAttribute(nombreAtributo);
 element.removeAttribute(nombreAtributo);
 ```
 
-###### Remover Atributos
+###### Recorrer todos los elementos
 ```javascript
  const elementos = document.querySelectorAll('.c-lightbox');
 
