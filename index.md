@@ -29,7 +29,7 @@ document.querySelector('nombreClase').classList.toggle('className');
 
 
 ```javascript
-document.querySelector('nombreClase').addEventlistener('evento', (e) => {
+document.querySelector('nombreClase').addEventListener('evento', (e) => {
 
     // Codigo Aqui
 
