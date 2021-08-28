@@ -88,4 +88,81 @@ element.removeAttribute(nombreAtributo);
  });
 ```
 
+## Funciones de ayuda
+
+
+###### RUT
+```javascript
+function validateRut(campo) {
+  if (campo.length == 0) {
+    return false;
+  }
+  if (campo.length < 8) {
+    return false;
+  }
+
+  campo = campo.replace("-", "");
+  campo = campo.replace(/\./g, "");
+
+  var suma = 0;
+  var caracteres = "1234567890kK";
+  var contador = 0;
+  for (var i = 0; i < campo.length; i++) {
+    var u = campo.substring(i, i + 1);
+    if (caracteres.indexOf(u) != -1) contador++;
+  }
+  if (contador == 0) {
+    return false;
+  }
+
+  var rut = campo.substring(0, campo.length - 1);
+  var drut = campo.substring(campo.length - 1);
+  var dvr = "0";
+  var mul = 2;
+
+  for (i = rut.length - 1; i >= 0; i--) {
+    suma = suma + rut.charAt(i) * mul;
+    if (mul == 7) mul = 2;
+    else mul++;
+  }
+  var res = suma % 11;
+  if (res == 1) dvr = "k";
+  else if (res == 0) dvr = "0";
+  else {
+    var dvi = 11 - res;
+    dvr = dvi + "";
+  }
+  if (dvr != drut.toLowerCase()) {
+    return false;
+  } else {
+    return true;
+  }
+}
+```
+###### Numero
+```javascript
+function validateNumber(number) {
+  var regex = /^[0-9\-]+$/i;
+  return regex.test(number);
+}
+```
+
+###### Telefono
+```javascript
+function validatePhone(phone) {
+  
+  var regex = /([+56]{3})(\d{9})/;
+  var regexPhone = /(\d{9})/;
+
+  if (regex.test(phone) || regexPhone.test(phone)) {
+    if (phone.length == 12 || phone.length == 9) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  return false;
+}
+
+```
 
