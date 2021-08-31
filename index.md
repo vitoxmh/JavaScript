@@ -165,4 +165,14 @@ function validatePhone(phone) {
 }
 
 ```
+###### Buscar Contenido en un listado
+```javascript
+ const elementos = document.querySelectorAll('.faq');
 
+ elementos.forEach((element) => {
+    
+	console.log(element.querySelector('.pregunta').textContent);
+	console.log(element.querySelector('.respuesta').innerHTML);
+	
+ });
+```
